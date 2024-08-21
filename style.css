@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+   width: 100%;
+}
+main{
+    margin: auto;
+    font-family: "Manrope", sans-serif;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.top{
+    width: 100%;
+    background-color: #24053E;
+    border-bottom-left-radius: 45% 9%;
+    border-bottom-right-radius: 45% 9%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    position: relative;
+    height: 43rem;
+    z-index: 2;
+}
+nav{
+    margin: 2rem auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+#spiral1{
+    position: absolute;
+    left: 0rem;
+    top: 4rem;
+}
+.fbut{
+    color: #fff;
+    border-bottom: solid #44FFA1;
+}
+.fbut:hover{
+    color:#44FFA1;
+    cursor: pointer;
+}
+.text{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+.head{
+    color: #fff;
+    font-size: 4rem;
+    font-weight: semi-bold;
+    text-align: center;
+    font-family: "Fraunces", serif;
+}
+#tail{
+    border-bottom: solid #44FFA1;
+}
+.but{
+    width: 30%;
+    line-height: 3rem;
+    height: 3rem;
+    text-align: center;
+    color: #24053E;
+    background-color: #44FFA1;
+}
+.but:hover{
+    background-color: inherit;
+    outline: solid #44FFA1;
+    color: #44FFA1;
+}
+#spiral2{
+    position: absolute;
+    right: 0rem;
+    top: 20rem;
+}
+.image{
+    margin-bottom: -15rem;
+
+}
+.mid{
+    background-color: #FCF8FF;
+    font-family: "Fraunces", serif;
+    height: 55rem;
+    width: 100%;
+    margin-top: -15rem;
+    z-index: 1;
+    position: relative;
+    border-bottom-left-radius: 45% 9%;
+    border-bottom-right-radius: 45%  9%;
+}
+
+.sections{
+    width: 80%;
+    margin: 27rem auto;
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.15rem;
+}
+.sec{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    gap: 1rem;
+    color: #24053E;
+}
+.sec h4{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.tt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.sec pre{
+    font-family: "Manrope", sans-serif;
+    line-height: 2rem;
+}
+.down{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    position: relative;
+    height: 40rem;
+}
+#guy{
+    max-width: 100%;
+    height: auto;
+}
+.message{
+    background-color: #24053E;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+    justify-content: center;
+    gap: 1rem;
+    height: 25rem;
+    width:64%;
+    left: 24rem;
+    top: 11.5rem;
+    position: absolute;
+    padding: 3rem;
+}
+.message h2{
+    text-align: left;
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: "Fraunces", serif;
+}
+.message p{
+    font-size: 1.125rem;
+    font-family: "Manrope", sans-serif;
+    line-height: 2rem;
+}
+.butt{
+    width: 40%;
+    line-height: 3rem;
+    height: 3rem;
+    text-align: center;
+    background-color: #44FFA1;
+    color: #24053E;
+    font-family: "Manrope", sans-serif;
+}
+.butt:hover{
+    cursor: pointer;
+    background-color: inherit;
+    color: #44FFA1;
+    outline: solid #44FFA1;
+}
+#spiral3{
+    position: absolute;
+    bottom: -3rem;
+    right: 2rem;
+}
+footer{
+    width: 10%;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.social{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+@media (min-width: 750px) and (max-width: 1000px) {
+    .text{
+    width: 50%;
+   }
+   #spiral1{
+    left: -4rem;
+   }
+   .but{
+    width: 40%;
+    font-size: 1.1rem;
+   }
+   #spiral2{
+    right: -2rem;
+   }
+   .mid{
+    height: 70rem;
+    margin-top: -10rem;
+   }
+   .sections{
+    flex-direction: column;
+    margin-top: 36rem;
+    gap: 2rem;
+   }
+   .sec{
+    flex-direction: row;
+    width: 100%;
+    gap: 3rem;
+   }
+   .tt{
+    font-size: 1.5rem;
+   }
+   #guy{
+    width: 70%;
+   } 
+   .message{
+    left: 13rem;
+    width: 80%;
+   }
+}
+@media (min-width: 320px) and (max-width: 750px) {
+    .top{
+        height: 30rem;
+    }
+    #spiral1,#spiral2,#spiral3{
+        display: none;
+    }
+    .text{
+        width: 100%;
+    }
+    .head{
+        font-size: 3rem;
+    }
+    #phone{
+        width: 20rem;
+    }
+    .mid{
+        height: 75rem;
+        margin-top: -8rem;
+    }
+    .sections{
+        flex-direction: column;
+        margin-top: 15rem;
+        height: 50rem;
+    }
+    .sec{
+        height: 10rem;
+        width: 100%;
+    }
+    .tt{
+       width: 100%;
+    }
+    .sec h4{
+        font-size: 1.5rem;
+    }
+    .message{
+        width: 100%;
+        height: 24rem;
+        left: 0rem;
+        top: 14rem;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .message h2{
+        font-size: 1.5rem;
+    }
+    .message p{
+        font-size: 0.9rem;
+        text-align: center;
+    }
+    .butt{
+        width: 80%;
+    }
+    footer{
+        width: 50%;
+        margin-top: 6rem;
+    }
+    .social{
+        width: 40%;
+    }
+}  
