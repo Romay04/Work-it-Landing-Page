@@ -5,6 +5,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root{
+    --primary-color: #FFFFFF;
+    --secondary-color: #44FFA1;
+    --tetiary-color: #24053E;
+    --dormant-color: #584D62;
+    --semi-color: #FCF8FF;
+}
 body{
    width: 100%;
 }
@@ -19,7 +26,7 @@ main{
 }
 .top{
     width: 100%;
-    background-color: #24053E;
+    background-color: var(--tetiary-color);
     border-bottom-left-radius: 45% 9%;
     border-bottom-right-radius: 45% 9%;
     display: flex;
@@ -27,7 +34,7 @@ main{
     align-items: center;
     gap: 2rem;
     position: relative;
-    height: 43rem;
+    height: 41rem;
     z-index: 2;
 }
 nav{
@@ -42,42 +49,43 @@ nav{
     top: 4rem;
 }
 .fbut{
-    color: #fff;
-    border-bottom: solid #44FFA1;
+    color: var(--primary-color);
+    border-bottom: solid var(--secondary-color);
 }
 .fbut:hover{
-    color:#44FFA1;
+    color:var(--secondary-color);
     cursor: pointer;
 }
 .text{
-    width: 35%;
+    width: 50%;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
     align-items: center;
 }
 .head{
-    color: #fff;
+    color: var(--primary-color);
     font-size: 4rem;
     font-weight: semi-bold;
     text-align: center;
     font-family: "Fraunces", serif;
 }
 #tail{
-    border-bottom: solid #44FFA1;
+    border-bottom: solid var(--secondary-color);
 }
 .but{
     width: 30%;
     line-height: 3rem;
     height: 3rem;
     text-align: center;
-    color: #24053E;
-    background-color: #44FFA1;
+    color: var(--tetiary-color);
+    background-color: var(--secondary-color);
 }
+
 .but:hover{
     background-color: inherit;
-    outline: solid #44FFA1;
-    color: #44FFA1;
+    outline: solid var(--secondary-color);
+    color: var(--secondary-color);
 }
 #spiral2{
     position: absolute;
@@ -89,11 +97,11 @@ nav{
 
 }
 .mid{
-    background-color: #FCF8FF;
+    background-color: var(--semi-color);
     font-family: "Fraunces", serif;
     height: 55rem;
     width: 100%;
-    margin-top: -15rem;
+    margin-top: -10rem;
     z-index: 1;
     position: relative;
     border-bottom-left-radius: 45% 9%;
@@ -103,10 +111,7 @@ nav{
 .sections{
     width: 80%;
     margin: 27rem auto;
-    height: 20rem;
     display: flex;
-    align-items: center;
-    justify-content: center;
     gap: 1.15rem;
 }
 .sec{
@@ -116,7 +121,7 @@ nav{
     align-items: center;
     flex: 1;
     gap: 1rem;
-    color: #24053E;
+    color: var(--tetiary-color);
 }
 .sec h4{
     font-size: 2rem;
@@ -145,8 +150,8 @@ nav{
     height: auto;
 }
 .message{
-    background-color: #24053E;
-    color: #fff;
+    background-color: var(--tetiary-color);
+    color: var(--primary-color);
     display: flex;
     flex-direction: column;
     align-items: normal;
@@ -170,21 +175,6 @@ nav{
     font-family: "Manrope", sans-serif;
     line-height: 2rem;
 }
-.butt{
-    width: 40%;
-    line-height: 3rem;
-    height: 3rem;
-    text-align: center;
-    background-color: #44FFA1;
-    color: #24053E;
-    font-family: "Manrope", sans-serif;
-}
-.butt:hover{
-    cursor: pointer;
-    background-color: inherit;
-    color: #44FFA1;
-    outline: solid #44FFA1;
-}
 #spiral3{
     position: absolute;
     bottom: -3rem;
@@ -204,8 +194,13 @@ footer{
     display: flex;
     justify-content: space-between;
 }
-@media (min-width: 750px) and (max-width: 1000px) {
-    .text{
+@media (min-width: 1031px){
+.sections{
+    width: 100%;
+}
+}
+@media (min-width: 750px) and (max-width: 1030px) {
+   .text{
     width: 50%;
    }
    #spiral1{
@@ -215,16 +210,16 @@ footer{
     width: 40%;
     font-size: 1.1rem;
    }
-   #spiral2{
-    right: -2rem;
+   #phone{
+    width: 32.125rem;
    }
    .mid{
-    height: 70rem;
+    height: 80rem;
     margin-top: -10rem;
    }
    .sections{
     flex-direction: column;
-    margin-top: 36rem;
+    margin-top: 20rem;
     gap: 2rem;
    }
    .sec{
@@ -236,40 +231,51 @@ footer{
     font-size: 1.5rem;
    }
    #guy{
-    width: 70%;
-   } 
+    width: 20rem;
+   }
    .message{
-    left: 13rem;
-    width: 80%;
+    left: -4rem;
+    top: 5.5rem;
+    width: 50rem;
+    position: relative;
+    padding: 1rem;
+   }
+   .message h2{
+    font-size: 2rem;
+   }
+   #spiral3{
+    bottom: -5rem;
+    width: 10rem;
    }
 }
-@media (min-width: 320px) and (max-width: 750px) {
+@media (min-width: 320px) and (max-width: 749px){
     .top{
-        height: 30rem;
+        height: 28rem;
     }
     #spiral1,#spiral2,#spiral3{
         display: none;
     }
     .text{
-        width: 100%;
+        width: 60%;
     }
     .head{
-        font-size: 3rem;
+        font-size: 2rem;
     }
     #phone{
         width: 20rem;
     }
     .mid{
-        height: 75rem;
+        height: 80rem;
         margin-top: -8rem;
     }
     .sections{
         flex-direction: column;
         margin-top: 15rem;
-        height: 50rem;
+        height: 60rem;
+        width: 90%;
     }
     .sec{
-        height: 10rem;
+        height: 30rem;
         width: 100%;
     }
     .tt{
@@ -278,14 +284,18 @@ footer{
     .sec h4{
         font-size: 1.5rem;
     }
+    .down{
+        width: 90%;
+        flex-direction: column;
+        height: 45rem;
+    }
     .message{
         width: 100%;
-        height: 24rem;
-        left: 0rem;
-        top: 14rem;
+        height: 27rem;
+        position: relative;
+        left: 0rem; 
+        top: -4rem;
         padding: 0;
-        display: flex;
-        flex-direction: column;
         align-items: center;
         justify-content: center;
     }
@@ -293,17 +303,36 @@ footer{
         font-size: 1.5rem;
     }
     .message p{
-        font-size: 0.9rem;
+        font-size: 1rem;
         text-align: center;
     }
-    .butt{
-        width: 80%;
+    .but{
+        width: 40%;
     }
     footer{
         width: 50%;
+        height: 1rem;
+        line-height: 1rem;
         margin-top: 6rem;
     }
     .social{
         width: 40%;
     }
 }  
+@media(min-width: 451px) and (max-width: 749px){
+    .text{
+        width: 50%;
+    }
+    .head{
+        font-size: 2rem;
+    }
+    #phone{
+        width: 25rem;
+    }
+    .down{
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+        height: 55rem;
+    }
+}
